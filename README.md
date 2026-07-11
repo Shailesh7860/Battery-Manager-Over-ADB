@@ -13,7 +13,12 @@ This system monitors a **Android** over Wi-Fi from a **Raspberry Pi** and softwa
 ### 2. The Linux Background Service
 * **Path:** `/etc/systemd/system/battery-monitor.service`
 * **Purpose:** Keeps the script running 24/7 in the background and restarts it automatically if the Raspberry Pi reboots or crashes.
-
+* **Commands** Register and Start
+  ```bash
+  sudo systemctl daemon-reload
+  sudo systemctl enable battery-monitor.service
+  sudo systemctl start battery-monitor.service
+  ```
 ---
 
 ## 📋 Section 2: Essential Commands Directory
